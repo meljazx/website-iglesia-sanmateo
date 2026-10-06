@@ -1,0 +1,1030 @@
+.inicio {
+
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 1440px;
+    min-height: 4119.23px;
+    position: relative;
+}
+
+.inicio .fondo-principal {
+    top: 76px;
+    width: 1440px;
+    height: 3275px;
+    background-color: #fafafa;
+    position: absolute;
+    left: 0;
+}
+
+.inicio .barra-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 76px;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.inicio .text-wrapper {
+    margin-top: 17.3px;
+    width: 242.31px;
+    height: 28.56px;
+    margin-left: 110.8px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 19px;
+    letter-spacing: 0;
+    line-height: 27.6px;
+    white-space: nowrap;
+}
+
+.inicio .div {
+    margin-top: 28.8px;
+    width: 76.15px;
+    height: 20.77px;
+    margin-left: 785.8px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 13.8px;
+    letter-spacing: 0;
+    line-height: 20.1px;
+    white-space: nowrap;
+}
+
+.inicio .text-wrapper-2 {
+    margin-top: 28.8px;
+    width: 51.92px;
+    height: 20.77px;
+    margin-left: 3.5px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 13.8px;
+    letter-spacing: 0;
+    line-height: 20.1px;
+    white-space: nowrap;
+}
+
+.inicio .text-wrapper-3 {
+    margin-top: 28.8px;
+    width: 96.92px;
+    height: 20.77px;
+    margin-left: 3.5px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 13.8px;
+    letter-spacing: 0;
+    line-height: 20.1px;
+    white-space: nowrap;
+}
+.inicio portada-capas {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 1440px;
+    height: 606px;
+    border-radius: 0px 0px 250px 250px;
+    overflow: hidden;
+}
+
+.inicio .foto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 605px;
+    object-fit: cover;
+}
+
+.inicio .t-tulo {
+    position: absolute;
+    top: 245px;
+    left: 300px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 69.9px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 76.9px;
+    white-space: nowrap;
+}
+
+.inicio .subt-tulo {
+    position: absolute;
+    top: 350px;
+    left: 552px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #b69858;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 30.8px;
+    white-space: nowrap;
+}
+
+.inicio .forma {
+    left: 26px;
+    position: absolute;
+    top: 273px;
+    width: 44px;
+    height: 59px;
+    background-color: #ffffff9e;
+    border-radius: 22px;
+}
+
+.inicio .flecha-der {
+    left: 41px;
+    position: absolute;
+    top: 281px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 43px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 43px;
+    white-space: nowrap;
+}
+.inicio .forma-2 {
+    left: 1372px;
+    position: absolute;
+    top: 273px;
+    width: 44px;
+    height: 59px;
+    background-color: #ffffff9e;
+    border-radius: 22px;
+}
+
+inicio .flecha-izq {
+    left: 1387px;
+    position: absolute;
+    top: 281px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 43px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 43px;
+    white-space: nowrap;
+}
+
+inicio .logo {
+    position: absolute;
+    top: -34px;
+    left: 618px;
+    width: 207px;
+    height: 175px;
+}
+.inicio .forma-del-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 205px;
+    height: 175px;
+    background-color: #ffffff;
+    border-radius: 102.5px / 87.5px;
+}
+
+.inicio .texto-san-mateo{
+    position: absolute;
+    top: 112px;
+    left: 27px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 27px;
+    letter-spacing: 0;
+    line-height: 27px;
+    white-space: nowrap;
+}
+
+.inicio .marca-parroquial {
+    position: absolute;
+    top: 46px;
+    left: 64px;
+    width: 59px;
+    height: 52px;
+    object-fit: cover;
+}
+.inicio .separador-der {
+    top: 768px;
+    left: 35px;
+    width: 443px;
+    background-color: #94a3b8;
+    position: absolute;
+    height: 1px;
+}
+
+.inicio .separador-izq {
+    top: 768px;
+    left: 997px;
+    width: 408px;
+    background-color: #94a3b8;
+    position: absolute;
+    height: 1px;
+}
+
+.inicio .tiulo-destacado {
+    position: absolute;
+    top: 748px;
+    left: 460px;
+    width: 519px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 52.2px;
+    white-space: nowrap;
+}
+.inicio .anterior {
+    position: absolute;
+    top: 952px;
+    left: 28px;
+    width: 48px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 69.2px;
+    letter-spacing: 0;
+    line-height: 100.4px;
+    white-space: nowrap;
+}
+
+.inicio .siguiente {
+    position: absolute;
+    top: 952px;
+    left: 1367px;
+    width: 45px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 69.2px;
+    letter-spacing: 0;
+    line-height: 100.4px;
+    white-space: nowrap;
+}
+
+.inicio .evento {
+    position: absolute;
+    top: 834px;
+    left: 114px;
+    width: 596px;
+    height: 407px;
+}
+.inicio .evento-en-la-plaza {
+    width: 592px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 322px;
+    object-fit: cover;
+}
+
+
+.inicio .evento-2 {
+    position: absolute;
+    top: 350px;
+    left: 17px;
+    width: 190px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 38.1px;
+    letter-spacing: 0;
+    line-height: 55.2px;
+    white-space: nowrap;
+}
+
+.inicio .etiqueta-turquesa {
+    left: 180px;
+    background-color: #49ceca;
+    position: absolute;
+    top: 367px;
+    width: 31px;
+    height: 31px;
+}
+.inicio .hora-del-evento {
+    position: absolute;
+    top: 367px;
+    left: 228px;
+    width: 218px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #67bed9;
+    font-size: 14.5px;
+    letter-spacing: 0;
+    line-height: 21.1px;
+    white-space: nowrap;
+}
+
+.inicio .evento-3 {
+    position: absolute;
+    top: 834px;
+    left: 741px;
+    width: 592px;
+    height: 407px;
+}
+
+.inicio .evento-en-la-iglesia {
+    width: 588px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 322px;
+    object-fit: cover;
+}
+
+.inicio .etiqueta-amarilla {
+    left: 163px;
+    background-color: #f6e28f;
+    position: absolute;
+    top: 367px;
+    width: 31px;
+    height: 31px;
+}
+.inicio .hora-del-evento-2 {
+    position: absolute;
+    top: 367px;
+    left: 211px;
+    width: 218px;
+    font-family:
+        "Inter", Helvetica;
+    font-weight: 400;
+    color: #67bed9;
+    font-size: 14.5px;
+    letter-spacing: 0;
+    line-height: 21.1px;
+    white-space: nowrap;
+}
+
+.inicio .separador-der-2 {
+    position: absolute;
+    top: 1336px;
+    left: 35px;
+    width: 443px;
+    height: 1px;
+    background-color: #94a3b8;
+}
+
+.inicio .separador-izq-2 {
+    position: absolute;
+    top: 1336px;
+    left: 997px;
+    width: 408px;
+    height: 1px;
+    background-color: #94a3b8;
+}
+
+.inicio .sobre-nosotros {
+    position: absolute;
+    top: 1315px;
+    left: 114px;
+    width: 1208px;
+    height: 443px;
+}
+
+.inicio .t-tulo-de-secci-n {
+    position: absolute;
+    top: 0;
+    left: 346px;
+    width: 519px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 69.6px;
+    white-space: nowrap;
+}
+
+.inicio .separador {
+    top: 55px;
+    left: 177px;
+    width: 862px;
+    background-color: #eeeeee;
+    position: absolute;
+    height: 1px;
+}
+
+.inicio .presentaci-n {
+    position: absolute;
+    top: 90px;
+    left: 138px;
+    width: 935px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #0f172a;
+    font-size: 19px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 27.6px;
+    white-space: nowrap;
+}
+
+.inicio .boton {
+    top: 177px;
+    left: 498px;
+    width: 213px;
+    position: absolute;
+    height: 69px;
+}
+
+.inicio .botn-saber-mas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 211px;
+    height: 69px;
+    background-color: #67bed9;
+    border-radius: 34.62px;
+}
+
+.inicio .text-wrapper-4 {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 211px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 32.6px;
+    white-space: nowrap;
+}
+
+.inicio .mision {
+    position: absolute;
+    top: 270px;
+    left: 0;
+    width: 575px;
+    height: 173px;
+}
+
+.inicio .div-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 571px;
+    height: 173px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 17.31px #0f162612;
+}
+
+.inicio .text-wrapper-5 {
+    top: 27px;
+    left: 21px;
+    width: 530px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 39.8px;
+    text-align: center;
+    line-height: 57.7px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.inicio .p {
+    top: 100px;
+    left: 35px;
+    width: 502px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #0f172aad;
+    font-size: 15.6px;
+    line-height: 22.6px;
+    position: absolute;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+
+.inicio .vision {
+    position: absolute;
+    top: 270px;
+    left: 637px;
+    width: 575px;
+    height: 173px;
+}
+
+.inicio .virgen-de-belen {
+    position: absolute;
+    top: 1852px;
+    left: 62px;
+    width: 1315px;
+    height: 848px;
+    background-color: #fafafa;
+}
+.inicio .forma-fondo-blanco {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: 1315px;
+    height: 575px;
+    background: linear-gradient(180deg,
+         rgba(255, 255, 255, 0) 0%,
+         rgba(255, 255, 255, 1) 15%,
+         rgba(255, 255, 255, 1) 80%,
+         rgba(255, 255, 255, 0) 100%);
+}
+
+.inicio .texto-devoci-n-a-la {
+    position: absolute;
+    top: 492px;
+    left: 70px;
+    width: 345px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #0f172ab2;
+    font-size: 15.5px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 23.2px;
+}
+
+.inicio .texto-historia-e {
+    position: absolute;
+    top: 502px;
+    left: 860px;
+    width: 347px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #0f172ab2;
+    font-size: 15.5px;
+    letter-spacing: 0;
+    line-height: 23.2px;
+}
+
+.inicio .img {
+    position: absolute;
+    top: -9px;
+    left: 150px;
+    width: 989px;
+    height: 989px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+.inicio .forma-Inea {
+    position: absolute;
+    top: 596px;
+    left: 329px;
+    width: 95px;
+    height: 2px;
+    background-color: #67bed9;
+}
+
+.inicio .forma-1nea-2 {
+    position: absolute;
+    top: 583px;
+    left: 860px;
+    width: 95px;
+    height: 2px;
+    background-color: #67bed9;
+}
+
+.inicio .forma-separador {
+    position: absolute;
+    top: 822px;
+    left: 0;
+    width: 1316px;
+    height: 1px;
+    background-color: #94a3b8a6;
+}
+
+.inicio .titulo {
+    position: absolute;
+    top: 43px;
+    left: 258px;
+    width: 787px;
+    height: 130px;
+}
+
+.inicio .subtitulo {
+    position: absolute;
+    top: 135px;
+    left: 459px;
+    width: 393px;
+    height: 49px;
+}
+
+
+inicio .boton-2 {
+    top: 911px;
+    left: 532px;
+    width: 212px;
+    position: absolute;
+    height: 69px;
+}
+
+.inicio .botn-saber-mas-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 208px;
+    height: 69px;
+    background-color: #b69858;
+    border-radius: 34.62px;
+}
+
+.inicio .text-wrapper-6 {
+    position: absolute;
+    top: 18px;
+    left: 2px;
+    width: 208px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 32.6px;
+    white-space: nowrap;
+}
+
+.inicio .sociedades {
+    position: absolute;
+    top: 2893px;
+    left: 111px;
+    width: 1218px;
+    height: 367px;
+}
+
+.inicio .grupos-apostolados {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1218px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 52.2px;
+}
+
+.inicio .subt-tulo-de-grupos {
+    position: absolute;
+    top: 52px;
+    left: 132px;
+    width: 955px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #94a3b8;
+    font-size: 14.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 21.1px;
+    white-space: nowrap;
+}
+
+.inicio .sociedad {
+    position: absolute;
+    top: 94px;
+    left: 93px;
+    width: 258px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    gap: 41.5px;
+}
+
+.inicio .sociedad-religiosa {
+    margin-left: 31.2px;
+    width: 190.38px;
+    height: 197.31px;
+    object-fit: cover;
+}
+
+.inicio .nombre-de-la {
+    width: 256.15px;
+    height: 33.75px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 400;
+    font-style: italic;
+    color: #046b86;
+    font-size: 22.5px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 32.6px;
+    white-space: nowrap;
+}
+
+.inicio .sociedad-2 {
+    position: absolute;
+    top: 94px;
+    left: 498px;
+    width: 258px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    gap: 41.5px;
+}
+
+.inicio .sociedad-3 {
+    position: absolute;
+    top: 94px;
+    left: 879px;
+    width: 258px;
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    gap: 41.5px;
+}
+
+.inicio .separador-2 {
+    top: 3351px;
+    left: 0;
+    width: 1440px;
+    background-color: #046b86;
+    position: absolute;
+    height: 1px;
+}
+
+.inicio .contacto {
+    position: absolute;
+    top: 3354px;
+    left: 0;
+    width: 1440px;
+    height: 291px;
+    background-color: #ffffff;
+}
+
+.inicio .text-wrapper-7 {
+    position: absolute;
+    top: 76px;
+    left: 277px;
+    width: 886px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 700;
+    color: #046b86;
+    font-size: 29.8px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 43.2px;
+    white-space: nowrap;
+}
+
+
+.inicio .correo-electr-nico {
+    position: absolute;
+    top: 145px;
+    left: 346px;
+    width: 748px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #94a3b8;
+    font-size: 20.8px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 30.1px;
+    white-space: nowrap;
+}
+
+.inicio .red-social {
+    top: 204px;
+    left: 616px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 6.92px;
+    position: absolute;
+    width: 52px;
+}
+
+.inicio .red-f {
+    top: 208px;
+    left: 616px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #046b86;
+    font-size: 27.7px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 40.2px;
+    white-space: nowrap;
+    position: absolute;
+    width: 52px;
+}
+
+
+.inicio .red-social-2 {
+    left: 696px;
+    position: absolute;
+    top: 204px;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 6.92px;
+}
+
+.inicio .red {
+    top: 208px;
+    left: 696px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #046b86;
+    font-size: 27.7px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 40.2px;
+    white-space: nowrap;
+    position: absolute;
+    width: 52px;
+}
+
+
+.inicio .red-social-3 {
+    left: 775px;
+    position: absolute;
+    top: 204px;
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 6.92px;
+}
+
+.inicio .red-2 {
+    top: 208px;
+    left: 775px;
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #046b86;
+    font-size: 27.7px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 40.2px;
+    white-space: nowrap;
+    position: absolute;
+    width: 52px;
+}
+
+.inicio .zona-de-marca {
+    position: absolute;
+    top: 3645px;
+    left: 0;
+    width: 1440px;
+    height: 235px;
+    background-color: #ffffff;
+}
+
+.inicio .separador-3 {
+    top: 3645px;
+    left: 0;
+    width: 1440px;
+    background-color: #046b86;
+    position: absolute;
+    height: 1px;
+}
+
+.inicio .sub-pie-pagina {
+    position: absolute;
+    top: 3721px;
+    left: 111px;
+    width: 1222px;
+    height: 47px;
+    display: flex;
+}
+
+.inicio .marca-parroquial-2 {
+    width: 48.46px;
+    height: 41.54px;
+    object-fit: cover;
+}
+
+.inicio .la-parroquia {
+    margin-top: 10.4px;
+    width: 380.77px;
+    height: 36.35px;
+    margin-left: 6.9px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 400;
+    color: #046b86;
+    font-size: 24.2px;
+    letter-spacing: 0;
+    line-height: 35.1px;
+    white-space: nowrap;
+}
+
+.inicio .a-o {
+    margin-top: 17.3px;
+    width: 83.08px;
+    height: 23.37px;
+    margin-left: 699.2px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #94a3b8;
+    font-size: 15.6px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: 22.6px;
+    white-space: nowrap;
+}
+
+
+.inicio .pie-de-pagina {
+    position: absolute;
+    top: 3825px;
+    left: 0;
+    width: 1440px;
+    height: 294px;
+    background-color: #67bed9;
+}
+
+.inicio .text-wrapper-8 {
+    position: absolute;
+    top: 52px;
+    left: 111px;
+    width: 433px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 17.3px;
+    letter-spacing: 0;
+    line-height: 25.1px;
+    white-space: nowrap;
+}
+
+.inicio .descripci-n {
+    position: absolute;
+    top: 97px;
+    left: 111px;
+    width: 363px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14.5px;
+    letter-spacing: 0;
+    line-height: 21.1px;
+    white-space: nowrap;
+}
+
+.inicio.text-wrapper-98 {
+    position: absolute;
+    top: 52px;
+    left: 523px;
+    width: 312px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 17.3px;
+    letter-spacing: 0;
+    line-height: 25.1px;
+    white-space: nowrap;
+}
+
+.inicio .enlaces-del-sitio {
+    position: absolute;
+    top: 100px;
+    left: 523px;
+    width: 277px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14.5px;
+    letter-spacing: 0;
+    line-height: 21.1px;
+    white-space: nowrap;
+}
+
+.inicio .text-wrapper-10 {
+    position: absolute;
+    top: 52px;
+    left: 942px;
+    width: 312px;
+    font-family: "Libre Baskerville", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 17.3px;
+    letter-spacing: 0;
+    line-height: 25.1px;
+    white-space: nowrap;
+}
+
+.inicio .datos-de-contacto {
+    position: absolute;
+    top: 100px;
+    left: 942px;
+    width: 388px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14.5px;
+    letter-spacing: 0;
+    line-height: 21.1px;
+    white-space: nowrap;
+}
