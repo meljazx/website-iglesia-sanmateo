@@ -2,7 +2,7 @@
 
 Orden de navegación: **Inicio → Blog → Biblioteca**
 
-```
+```text
 website-iglesia-sanmateo/
 ├── index.html            ← Inicio
 ├── blog.html             ← Blog
@@ -22,4 +22,4 @@ website-iglesia-sanmateo/
 X
 ```
 
-Los scripts son esqueletos con `TODO` listos para programar; ya están enlazados con `defer` en cada HTML.
+Los scripts son esqueletos con `TODO` listos para programar; ya están enlazados con `defer` en cada HTML. se va a ir actualizando mediante se vaya rpogramando durante todo el proyecto.
