@@ -1,0 +1,90 @@
+/* ==========================================================================
+   style.css — Estilos GLOBALES (se carga en todas las páginas)
+   Contiene: componentes compartidos, variables, tipografía y layout base.
+   ========================================================================== */
+
+/* Componentes compartidos (@import debe ir al principio del archivo) */
+@import url("components/header.css");
+@import url("components/footer.css");
+@import url("components/buttons.css");
+@import url("components/page-banner.css");
+@import url("components/search-bar.css");
+
+/* ---------- Variables ---------- */
+:root {
+  /* Colores */
+  --primary-color: #046b86;
+  --secondary-color: #67bed9;
+  --accent-yellow: #f6e28f;
+  --accent-teal: #49ceca;
+  --accent-gold: #b69858;
+  --text-strong: #0f172a;
+  --text-dark: rgba(15, 23, 42, 0.68);
+  --text-light: #94a3b8;
+  --bg-light: #fafafa;
+  --white: #ffffff;
+  --border-color: #eeeeee;
+  --shadow-soft: rgba(15, 23, 38, 0.06);
+
+  /* Tipografías (Inter = texto, Lora / Playfair Display = títulos) */
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Lora', serif;
+
+  /* Medidas */
+  --header-height: 76px;
+  --content-padding: 110px;
+}
+
+@media (max-width: 1024px) {
+  :root { --content-padding: 40px; }
+}
+@media (max-width: 768px) {
+  :root { --content-padding: 20px; }
+}
+
+/* ---------- Tipografía y base ---------- */
+body {
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .serif {
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content-padded {
+  padding-left: var(--content-padding);
+  padding-right: var(--content-padding);
+}

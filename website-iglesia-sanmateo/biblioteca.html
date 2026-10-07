@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iglesia San Mateo | Biblioteca</title>
+
+  <!-- Fuentes: Inter (texto) · Lora y Playfair Display (títulos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- Estilos: globales + específicos de la página -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/biblioteca.css">
+  <script src="scripts.js/main.js" defer></script>
+  <script src="scripts.js/biblioteca.js" defer></script>
+</head>
+<body class="page-biblioteca">
+<!-- ============ HEADER (navbar) ============ -->
+<section id="section-header">
+  <div class="container">
+    <header class="site-header">
+      <div class="site-header__left">
+        <a href="index.html" class="brand-left serif">Iglesia</a>
+      </div>
+      <a href="index.html" class="logo">
+        <img src="assets/images/common/logo.png" alt="Logo San Mateo">
+        <span class="serif">San Mateo</span>
+      </a>
+      <nav class="site-header__right">
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="biblioteca.html" class="nav-link" aria-current="page">Biblioteca</a>
+        <a href="index.html#section-contact" class="nav-link">Contacto</a>
+      </nav>
+    </header>
+  </div>
+</section>
+
+<!-- ============ BANNER ============ -->
+<section id="section-hero">
+  <div class="container">
+    <div class="page-banner">
+      <h1 class="page-banner__title">BIBLIOTECA VIRTUAL</h1>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BÚSQUEDA ============ -->
+<section id="section-search" class="container">
+  <div class="content-padded">
+    <div class="search-bar">
+      <div class="search-inputs">
+        <div class="search-box">
+          <span class="icon">⌕</span>
+          <input type="text" placeholder="Buscar noticias...">
+        </div>
+        <button class="filter-btn" type="button">Filtrar <span class="icon">▦</span></button>
+      </div>
+      <div class="pagination-info">mes año ~ etiqueta</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTENIDO PRINCIPAL ============ -->
+<section id="section-main-content" class="container content-padded">
+  <div class="content-layout">
+    <aside class="sidebar">
+      <div class="category-card">
+        <h3 class="sidebar-title">Categorías</h3>
+        <ul class="category-list">
+          <li class="cat-item">Historia de la Iglesia
+            <ul class="sub-cat-list">
+              <li>Primeros Siglos</li>
+              <li>La Reforma</li>
+              <li>Era Moderna</li>
+            </ul>
+          </li>
+          <li class="cat-item">Los Sacramentos
+            <ul class="sub-cat-list">
+              <li>Bautismo</li>
+              <li>Eucaristía</li>
+              <li>Confirmación</li>
+            </ul>
+          </li>
+          <li class="cat-item">Vidas de Santos</li>
+          <li class="cat-item">Documentos Papales</li>
+          <li class="cat-item">Archivo Local</li>
+          <li class="cat-item">Grupos y Apostolados</li>
+        </ul>
+      </div>
+      
+      <div class="index-section">
+        <h3 class="sidebar-title">Índice documental</h3>
+        <ul class="index-list">
+          <li>LIBRO IV</li>
+          <li>TÍTULO I</li>
+          <li>BENEDICT XIV</li>
+          <li>CAPÍTULO I</li>
+          <li>CAPÍTULO II</li>
+          <li>PIUS V</li>
+          <li>JOHN XXIII</li>
+          <li>PIUS XI</li>
+          <li>PIUS XII</li>
+          <li>BENEDICT XV</li>
+          <li>PIUS X</li>
+          <li>LEO XIII</li>
+        </ul>
+      </div>
+
+      <div class="other-pubs-section">
+        <h3 class="sidebar-title-teal">Otras publicaciones</h3>
+        <ul class="other-pubs-list">
+          <li>Documentos</li>
+          <li>Tradición Cristiana</li>
+          <li>Teología del Espíritu Santo</li>
+        </ul>
+      </div>
+    </aside>
+
+    <article class="article-content">
+      <div class="breadcrumb">TRADICIÓN Y FE</div>
+      <h2 class="article-title">El Romano Pontífice ~</h2>
+      <hr class="separator">
+      
+      <div class="quote-container">
+        <div class="quote-border"></div>
+        <blockquote class="quote-text">
+          “El Pastor de toda la Iglesia, que tiene potestad plena, suprema y universal sobre ella.”
+        </blockquote>
+      </div>
+
+      <p class="article-paragraph">
+        The Roman Pontiff, as the successor of Peter, is the perpetual and visible principle and foundation of unity of both the bishops and of the faithful. His authority and spiritual headship extend over the universal Church, guided by the Holy Spirit.
+      </p>
+
+      <div class="article-image-wrapper">
+        <img src="assets/images/biblioteca/articulo-san-pedro.png" alt="Statue of Saint Peter" class="main-image">
+        <div class="floating-accent-box"></div>
+      </div>
+
+      <p class="article-paragraph">
+        A lo largo de los siglos, la figura del Santo Padre ha sido el faro de luz y guía para la cristiandad. En este documento exploramos la historia del papado y su importancia fundamental en la estructura eclesial.<br><br>
+        Desde los primeros mártires hasta los papas de la era moderna, la sucesión apostólica se mantiene como una cadena ininterrumpida de gracia y responsabilidad pastoral.
+      </p>
+
+      <hr class="separator">
+
+      <h4 class="nav-section-title">NAVEGACIÓN DEL DOCUMENTO</h4>
+      
+      <div class="chapter-nav-container">
+        <div class="nav-card">
+          <span class="nav-direction">ANTERIOR</span>
+          <span class="nav-chapter-title">Capítulo I: Sucesión Apostólica</span>
+        </div>
+        <div class="nav-card">
+          <span class="nav-direction">SIGUIENTE</span>
+          <span class="nav-chapter-title">Capítulo III: Magisterio de la Iglesia</span>
+        </div>
+      </div>
+
+      <hr class="separator">
+
+      <div class="action-buttons-container">
+        <button class="btn-download">Descargar PDF</button>
+        <button class="btn-next-chapter">Siguiente Capítulo</button>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- ============ FOOTER ============ -->
+<section id="section-footer">
+  <div class="container">
+    <div class="pre-footer">
+      <div class="pre-footer__brand">
+        <img src="assets/images/common/logo.png" alt="Logo Parroquia San Mateo">
+        <span class="serif">LA PARROQUIA</span>
+      </div>
+      <div class="pre-footer__year">2026</div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4 class="footer-heading serif">Parroquia San Mateo</h4>
+          <p class="footer-text">Una comunidad al servicio de Dios y del prójimo desde hace más de un siglo.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading serif">Enlaces</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading serif">Contacto</h4>
+          <p class="footer-text">⌖ Calle Principal 123, Ciudad<br>☎ (555) 123-4567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Parroquia San Mateo. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+</section>
+</body>
+</html>
