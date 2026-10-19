@@ -1,0 +1,79 @@
+/* Barra de búsqueda + filtro (Blog y Biblioteca) */
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.search-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 308px;
+  height: 42px;
+  padding: 0 16px;
+  background: var(--white);
+  border-radius: 7px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.search-bar .icon {
+  color: var(--text-light);
+  font-size: 18px;
+}
+
+.search-box .icon {
+  margin-right: 8px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 20px;
+  background: var(--white);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 7px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-btn .icon {
+  color: inherit;
+}
+
+.pagination-info {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .search-box,
+  .search-inputs {
+    width: 100%;
+  }
+  .pagination-info {
+    width: 100%;
+    text-align: center;
+  }
+}

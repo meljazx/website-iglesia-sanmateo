@@ -1,0 +1,305 @@
+/* ==========================================================================
+   animations.css — Animaciones de Inicio y Blog
+   Todo está limitado a .page-home / .page-blog (o a html.js-anim, que solo
+   se activa en esas dos páginas), así que Biblioteca no cambia.
+   ========================================================================== */
+
+/* ---------- Aparecer al hacer scroll ---------- */
+html.js-anim { scroll-behavior: smooth; }
+
+html.js-anim .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s ease var(--reveal-delay, 0s),
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) var(--reveal-delay, 0s);
+}
+html.js-anim .reveal--left  { transform: translateX(-40px); }
+html.js-anim .reveal--right { transform: translateX(40px); }
+html.js-anim .reveal--zoom  { transform: scale(0.92); }
+
+html.js-anim .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Las líneas de los títulos "crecen" desde el centro */
+html.js-anim .section-header .line {
+  transition: transform 1s ease 0.2s;
+}
+html.js-anim .section-header.reveal .line {
+  transform: scaleX(0);
+}
+html.js-anim .section-header.reveal.is-visible .line {
+  transform: scaleX(1);
+}
+
+/* ---------- Navbar: subrayado animado ---------- */
+.page-home .nav-link,
+.page-blog .nav-link {
+  position: relative;
+}
+.page-home .nav-link::after,
+.page-blog .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.page-home .nav-link:hover::after,
+.page-blog .nav-link:hover::after,
+.page-blog .nav-link[aria-current='page']::after {
+  transform: scaleX(1);
+}
+
+/* ---------- Botones ---------- */
+.page-home .btn {
+  transition: filter 0.2s, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.page-home .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+}
+.page-home .btn:active {
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   INICIO
+   ========================================================================== */
+
+/* Hero: slider con fundido + zoom lento */
+.page-home .hero-bg img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+.page-home .hero-bg img.is-active {
+  opacity: 1;
+  animation: heroZoom 9s ease-out forwards;
+}
+@keyframes heroZoom {
+  from { transform: scale(1.08); }
+  to   { transform: scale(1); }
+}
+
+.page-home .hero-title,
+.page-home .hero-subtitle {
+  animation: fadeUp 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.page-home .hero-subtitle { animation-delay: 0.25s; }
+.page-home .hero-content.is-changing .hero-title,
+.page-home .hero-content.is-changing .hero-subtitle {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.page-home .nav-arrow {
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+.page-home .nav-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.92);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+.hero-dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hero-dot:hover { transform: scale(1.2); }
+.hero-dot.is-active { background: var(--white); }
+
+/* Lo más destacado: carrusel */
+.page-home .events-grid {
+  display: block;
+  flex: 1;
+  max-width: 1214px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.page-home .events-track {
+  display: flex;
+  gap: 34px;
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.page-home .event-card {
+  flex: 0 0 590px;
+  cursor: pointer;
+}
+.page-home .event-media {
+  overflow: hidden;
+  border-radius: 7px;
+}
+.page-home .event-img {
+  display: block;
+  transition: transform 0.6s ease;
+}
+.page-home .event-card:hover .event-img {
+  transform: scale(1.06);
+}
+.page-home .event-title {
+  transition: color 0.3s ease;
+}
+.page-home .event-card:hover .event-title {
+  color: var(--secondary-color);
+}
+.page-home .carousel-arrow {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.page-home .carousel-arrow:hover {
+  color: var(--secondary-color);
+  transform: scale(1.18);
+}
+
+/* ¿Quiénes somos? */
+.page-home .info-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.page-home .info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(15, 23, 38, 0.14);
+}
+
+/* Virgen de Belén: flotando suavemente */
+.page-home .virgin-img {
+  animation: floatY 6s ease-in-out infinite;
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* Grupos */
+.page-home .group-card {
+  cursor: pointer;
+}
+.page-home .group-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.page-home .group-card:hover .group-img {
+  transform: scale(1.06);
+  box-shadow: 0 10px 24px rgba(4, 107, 134, 0.25);
+}
+.page-home .group-name {
+  transition: color 0.3s ease;
+}
+.page-home .group-card:hover .group-name {
+  color: var(--secondary-color);
+}
+
+/* Redes sociales */
+.page-home .social-icon {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.page-home .social-icon:hover {
+  transform: translateY(-4px) scale(1.1);
+}
+
+/* Accesibilidad: foco visible en tarjetas clicables */
+.page-home .event-card:focus-visible,
+.page-home .group-card:focus-visible,
+.page-blog .blog-card:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   BLOG
+   ========================================================================== */
+.page-blog .page-banner__title {
+  animation: fadeUp 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.page-blog .tag {
+  transition: transform 0.25s ease;
+}
+.page-blog .tag:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.page-blog .filter-btn {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.page-blog .filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.1);
+}
+
+.page-blog .blog-card {
+  cursor: pointer;
+}
+.page-blog .card-image {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.page-blog .card-image img {
+  transition: transform 0.7s ease;
+}
+.page-blog .blog-card:hover .card-image img {
+  transform: scale(1.06);
+}
+.page-blog .card-title {
+  transition: color 0.3s ease;
+}
+.page-blog .blog-card:hover .card-title {
+  color: var(--secondary-color);
+}
+.page-blog .share {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.page-blog .share:hover {
+  color: var(--primary-color);
+  transform: scale(1.3) rotate(-15deg);
+}
+.page-blog .category-color {
+  transition: width 0.3s ease;
+}
+.page-blog .blog-card:hover .category-color {
+  width: 46px;
+}
+
+/* ---------- Respetar "reducir movimiento" ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html.js-anim { scroll-behavior: auto; }
+  html.js-anim .reveal,
+  html.js-anim .section-header .line {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .page-home .hero-bg img.is-active,
+  .page-home .hero-title,
+  .page-home .hero-subtitle,
+  .page-home .virgin-img,
+  .page-blog .page-banner__title {
+    animation: none;
+  }
+}

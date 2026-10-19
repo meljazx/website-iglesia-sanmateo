@@ -1,0 +1,102 @@
+/* Pre-footer (marca + año) y Footer compartidos */
+.pre-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px var(--content-padding);
+  background-color: var(--white);
+  border-top: 1px solid var(--primary-color);
+}
+
+.pre-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--primary-color);
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.pre-footer__brand img {
+  height: 41px;
+  width: auto;
+}
+
+.pre-footer__year {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.site-footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 60px var(--content-padding) 30px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-col {
+  flex: 1;
+  max-width: 380px;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  font-size: 14px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .pre-footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-col {
+    max-width: none;
+  }
+}

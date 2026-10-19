@@ -1,0 +1,27 @@
+/* Botón plano rectangular: se ajusta al tamaño de su texto */
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--white);
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.btn:hover {
+  filter: brightness(0.92);
+}
+
+.btn-cyan {
+  background-color: var(--accent-teal);
+}
+
+.btn-gold {
+  background-color: var(--accent-gold);
+}
