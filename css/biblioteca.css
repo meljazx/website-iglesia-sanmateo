@@ -92,6 +92,15 @@ button:where(.page-biblioteca *) {
   font-size: 14px;
   line-height: 2;
 }
+.category-list button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+.category-list button.is-active { color: var(--primary-color); font-weight: 700; }
 .sub-cat-list {
   padding-left: 15px;
   margin-bottom: 10px;
@@ -120,6 +129,13 @@ button:where(.page-biblioteca *) {
   background-color: var(--white);
   padding: 60px;
 }
+.library-entries { display: grid; gap: 20px; }
+.library-entry { padding: 24px; background: var(--bg-light); border-left: 3px solid var(--secondary-color); }
+.library-entry h3 { margin: 0 0 8px; color: var(--primary-color); font-size: 24px; }
+.library-entry__category { margin: 0 0 12px; color: var(--accent-teal); font-weight: 600; }
+.library-entry__summary { margin: 0; color: var(--text-dark); line-height: 1.7; white-space: pre-line; }
+.library-entry__actions { display: flex; align-items: center; gap: 18px; margin-top: 18px; }
+.library-entry__actions a { color: var(--primary-color); }
 .breadcrumb {
   color: var(--accent-teal);
   font-size: 14px;

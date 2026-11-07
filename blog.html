@@ -57,16 +57,13 @@
         <div class="search-inputs">
           <div class="search-box">
             <span class="icon">⌕</span>
-            <input type="text" placeholder="Buscar noticias...">
+            <input type="search" placeholder="Buscar noticias..." aria-label="Buscar publicaciones">
           </div>
-          <button class="filter-btn" type="button">Filtrar <span class="icon">▦</span></button>
         </div>
-        <div class="pagination-info">mes año ~ etiqueta</div>
+        <div class="pagination-info" aria-live="polite">Cargando publicaciones…</div>
       </div>
       <div class="tags-row">
-        <span class="tag tag-yellow">× tag</span>
-        <span class="tag tag-teal">× tag</span>
-        <span class="tag tag-gold">× tag</span>
+        <button class="tag tag-yellow is-active" type="button" data-category="">Todas</button>
       </div>
     </div>
   </div>
@@ -76,79 +73,7 @@
 <section id="section-blog-grid">
   <div class="container">
     <div class="blog-container">
-      <div class="blog-grid">
-        <!-- Post 1 -->
-        <article class="blog-card" data-body="Aquí irá el contenido completo de la publicación.">
-          <div class="card-image">
-            <img src="assets/images/blog/post-1.png" alt="Post image">
-          </div>
-          <div class="card-content">
-            <h2 class="serif card-title">Titulo</h2>
-            <p class="card-excerpt">subtítulo o descripción breve del evento...</p>
-            <div class="card-meta">
-              <span class="time">◷ hora</span>
-              <div class="card-actions">
-                <span class="share">‹</span>
-                <div class="category-color" style="background-color: var(--accent-yellow);"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-        
-        <!-- Post 2 -->
-        <article class="blog-card" data-body="Aquí irá el contenido completo de la publicación.">
-          <div class="card-image">
-            <img src="assets/images/blog/post-2.png" alt="Post image">
-          </div>
-          <div class="card-content">
-            <h2 class="serif card-title">Titulo</h2>
-            <p class="card-excerpt">subtítulo o descripción breve del evento...</p>
-            <div class="card-meta">
-              <span class="time">◷ hora</span>
-              <div class="card-actions">
-                <span class="share">‹</span>
-                <div class="category-color" style="background-color: var(--accent-teal);"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Post 3 -->
-        <article class="blog-card" data-body="Aquí irá el contenido completo de la publicación.">
-          <div class="card-image">
-            <img src="assets/images/blog/post-3.png" alt="Post image">
-          </div>
-          <div class="card-content">
-            <h2 class="serif card-title">Titulo</h2>
-            <p class="card-excerpt">subtítulo o descripción breve del evento...</p>
-            <div class="card-meta">
-              <span class="time">◷ hora</span>
-              <div class="card-actions">
-                <span class="share">‹</span>
-                <div class="category-color" style="background-color: var(--accent-teal);"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Post 4 -->
-        <article class="blog-card" data-body="Aquí irá el contenido completo de la publicación.">
-          <div class="card-image">
-            <img src="assets/images/blog/post-4.png" alt="Post image">
-          </div>
-          <div class="card-content">
-            <h2 class="serif card-title">Titulo</h2>
-            <p class="card-excerpt">subtítulo o descripción breve del evento...</p>
-            <div class="card-meta">
-              <span class="time">◷ hora</span>
-              <div class="card-actions">
-                <span class="share">‹</span>
-                <div class="category-color" style="background-color: var(--accent-gold);"></div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div class="blog-grid" aria-live="polite"></div>
     </div>
   </div>
 </section>
@@ -175,6 +100,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="admin.php">Administración</a></li>
           </ul>
         </div>
         <div class="footer-col">

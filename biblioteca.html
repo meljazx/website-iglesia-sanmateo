@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/biblioteca.css">
   <script src="scripts.js/main.js" defer></script>
+  <script src="scripts.js/modal.js" defer></script>
   <script src="scripts.js/biblioteca.js" defer></script>
 </head>
 <body class="page-biblioteca">
@@ -53,11 +54,10 @@
       <div class="search-inputs">
         <div class="search-box">
           <span class="icon">⌕</span>
-          <input type="text" placeholder="Buscar noticias...">
+          <input type="search" placeholder="Buscar documentos..." aria-label="Buscar documentos">
         </div>
-        <button class="filter-btn" type="button">Filtrar <span class="icon">▦</span></button>
       </div>
-      <div class="pagination-info">mes año ~ etiqueta</div>
+      <div class="pagination-info" aria-live="polite">Cargando documentos…</div>
     </div>
   </div>
 </section>
@@ -69,102 +69,16 @@
       <div class="category-card">
         <h3 class="sidebar-title">Categorías</h3>
         <ul class="category-list">
-          <li class="cat-item">Historia de la Iglesia
-            <ul class="sub-cat-list">
-              <li>Primeros Siglos</li>
-              <li>La Reforma</li>
-              <li>Era Moderna</li>
-            </ul>
-          </li>
-          <li class="cat-item">Los Sacramentos
-            <ul class="sub-cat-list">
-              <li>Bautismo</li>
-              <li>Eucaristía</li>
-              <li>Confirmación</li>
-            </ul>
-          </li>
-          <li class="cat-item">Vidas de Santos</li>
-          <li class="cat-item">Documentos Papales</li>
-          <li class="cat-item">Archivo Local</li>
-          <li class="cat-item">Grupos y Apostolados</li>
-        </ul>
-      </div>
-      
-      <div class="index-section">
-        <h3 class="sidebar-title">Índice documental</h3>
-        <ul class="index-list">
-          <li>LIBRO IV</li>
-          <li>TÍTULO I</li>
-          <li>BENEDICT XIV</li>
-          <li>CAPÍTULO I</li>
-          <li>CAPÍTULO II</li>
-          <li>PIUS V</li>
-          <li>JOHN XXIII</li>
-          <li>PIUS XI</li>
-          <li>PIUS XII</li>
-          <li>BENEDICT XV</li>
-          <li>PIUS X</li>
-          <li>LEO XIII</li>
-        </ul>
-      </div>
-
-      <div class="other-pubs-section">
-        <h3 class="sidebar-title-teal">Otras publicaciones</h3>
-        <ul class="other-pubs-list">
-          <li>Documentos</li>
-          <li>Tradición Cristiana</li>
-          <li>Teología del Espíritu Santo</li>
+          <li class="cat-item">Cargando categorías…</li>
         </ul>
       </div>
     </aside>
 
-    <article class="article-content">
-      <div class="breadcrumb">TRADICIÓN Y FE</div>
-      <h2 class="article-title">El Romano Pontífice ~</h2>
-      <hr class="separator">
-      
-      <div class="quote-container">
-        <div class="quote-border"></div>
-        <blockquote class="quote-text">
-          “El Pastor de toda la Iglesia, que tiene potestad plena, suprema y universal sobre ella.”
-        </blockquote>
-      </div>
-
-      <p class="article-paragraph">
-        The Roman Pontiff, as the successor of Peter, is the perpetual and visible principle and foundation of unity of both the bishops and of the faithful. His authority and spiritual headship extend over the universal Church, guided by the Holy Spirit.
-      </p>
-
-      <div class="article-image-wrapper">
-        <img src="assets/images/biblioteca/articulo-san-pedro.png" alt="Statue of Saint Peter" class="main-image">
-        <div class="floating-accent-box"></div>
-      </div>
-
-      <p class="article-paragraph">
-        A lo largo de los siglos, la figura del Santo Padre ha sido el faro de luz y guía para la cristiandad. En este documento exploramos la historia del papado y su importancia fundamental en la estructura eclesial.<br><br>
-        Desde los primeros mártires hasta los papas de la era moderna, la sucesión apostólica se mantiene como una cadena ininterrumpida de gracia y responsabilidad pastoral.
-      </p>
-
-      <hr class="separator">
-
-      <h4 class="nav-section-title">NAVEGACIÓN DEL DOCUMENTO</h4>
-      
-      <div class="chapter-nav-container">
-        <div class="nav-card">
-          <span class="nav-direction">ANTERIOR</span>
-          <span class="nav-chapter-title">Capítulo I: Sucesión Apostólica</span>
-        </div>
-        <div class="nav-card">
-          <span class="nav-direction">SIGUIENTE</span>
-          <span class="nav-chapter-title">Capítulo III: Magisterio de la Iglesia</span>
-        </div>
-      </div>
-
-      <hr class="separator">
-
-      <div class="action-buttons-container">
-        <button class="btn-download">Descargar PDF</button>
-        <button class="btn-next-chapter">Siguiente Capítulo</button>
-      </div>
+    <article class="article-content" aria-live="polite">
+      <div class="breadcrumb">HISTORIA, FE Y TRADICIÓN</div>
+      <h2 class="article-title">Biblioteca parroquial</h2>
+      <p class="article-paragraph">Consulta documentos históricos y materiales sobre la vida de nuestra comunidad.</p>
+      <div id="library-entries" class="library-entries"></div>
     </article>
   </div>
 </section>
@@ -191,6 +105,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="admin.php">Administración</a></li>
           </ul>
         </div>
         <div class="footer-col">

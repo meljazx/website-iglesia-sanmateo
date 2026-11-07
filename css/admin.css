@@ -1,0 +1,27 @@
+.admin-page { min-height: 100vh; padding: 40px 20px; background: var(--bg-light); }
+.admin-shell { width: min(1120px, 100%); margin: 0 auto; }
+.admin-back { display: inline-block; margin-bottom: 20px; color: var(--primary-color); }
+.admin-panel { padding: clamp(24px, 5vw, 48px); background: var(--white); box-shadow: 0 8px 32px var(--shadow-soft); }
+.admin-panel h1, .admin-panel h2 { margin-top: 0; color: var(--primary-color); }
+.admin-panel p { color: var(--text-dark); }
+.admin-panel form { display: grid; gap: 10px; }
+.admin-panel label { margin-top: 10px; color: var(--primary-color); font-weight: 600; }
+.admin-panel input, .admin-panel textarea, .admin-panel select { width: 100%; padding: 11px 12px; border: 1px solid var(--border-color); border-radius: 5px; font: inherit; }
+.admin-panel textarea { resize: vertical; }
+.admin-heading, .admin-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.admin-workspace { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr); gap: 40px; margin-top: 32px; }
+.admin-button { padding: 11px 18px; border: 0; border-radius: 5px; background: var(--secondary-color); color: var(--white); font: inherit; font-weight: 600; cursor: pointer; }
+.admin-button--secondary { background: var(--primary-color); }
+.admin-checkbox { display: flex; align-items: center; gap: 10px; }
+.admin-checkbox input { width: auto; }
+.admin-list { display: grid; gap: 12px; padding: 0; list-style: none; }
+.admin-list li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px; background: var(--bg-light); color: var(--text-dark); }
+.admin-list-actions { display: flex; gap: 8px; }
+.admin-list-actions button { padding: 6px 10px; border: 0; border-radius: 4px; background: var(--secondary-color); color: var(--white); cursor: pointer; }
+.admin-list-actions button:last-child { background: #8d3434; }
+.admin-message { min-height: 1.5em; color: var(--primary-color); }
+[hidden] { display: none !important; }
+@media (max-width: 760px) {
+  .admin-workspace { grid-template-columns: 1fr; }
+  .admin-heading, .admin-list li { align-items: flex-start; flex-direction: column; }
+}

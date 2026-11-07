@@ -23,6 +23,7 @@
   flex-wrap: wrap;
 }
 .tag {
+  border: 0;
   color: var(--white);
   padding: 6px 16px;
   border-radius: 17px;
@@ -32,6 +33,9 @@
   gap: 6px;
   cursor: pointer;
 }
+.tag.is-active { outline: 2px solid var(--primary-color); outline-offset: 2px; }
+.content-message { grid-column: 1 / -1; color: var(--text-dark); }
+.share { border: 0; background: transparent; padding: 0; }
 .tag-yellow { background-color: var(--accent-yellow); }
 .tag-teal { background-color: var(--accent-teal); }
 .tag-gold { background-color: var(--accent-gold); }

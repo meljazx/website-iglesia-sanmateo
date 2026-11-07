@@ -10,3 +10,7 @@
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db
+
+# Local database configuration and credentials
+.env
+config/database.local.php
