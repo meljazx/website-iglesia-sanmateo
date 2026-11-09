@@ -1,16 +1,14 @@
 /* ==========================================================================
-   home.js — Lógica del INICIO (solo se carga en index.html)
-   Hero slider · Carrusel "lo más destacado" · Ventanitas · Animaciones
+   Logica del INICIO 
    ========================================================================== */
 'use strict';
 
-/* ---------- Imágenes del slider del hero (edítalas aquí) ---------- */
+/* ---------- Imagenes del slider del hero (editables) ---------- */
 const HERO_SLIDES = [
   // La primera es la imagen que ya está en el HTML.
   { src: 'assets/images/home/hero.jpeg', alt: 'Iglesia San Mateo' },
   { src: 'assets/images/home/evento-plaza.png', alt: 'Evento en la plaza' },
   { src: 'assets/images/home/evento-iglesia.png', alt: 'Evento en la iglesia' }
-  // Puedes agregar texto propio por slide: { src: '...', alt: '...', title: '...', subtitle: '...' }
 ];
 const HERO_AUTOPLAY_MS = 6000;
 
@@ -38,7 +36,7 @@ function initHeroSlider() {
   const title = document.querySelector('.hero-title');
   const subtitle = document.querySelector('.hero-subtitle');
 
-  // Primera imagen = la del HTML; las demás se crean aquí
+  // Primera imagen 
   const images = [bg.querySelector('img')];
   HERO_SLIDES.slice(1).forEach((slide) => {
     const img = document.createElement('img');
@@ -125,7 +123,7 @@ function initHeroSlider() {
 }
 
 /* ==========================================================================
-   Carrusel "lo más destacado"
+   seccion de lo mas destacado (carrusel de eventos)
    ========================================================================== */
 function initHighlightsCarousel() {
   const viewport = document.querySelector('.events-grid');
@@ -146,8 +144,8 @@ function initHighlightsCarousel() {
   const maxIndex = () => Math.max(0, cards.length - visible());
 
   function go(i) {
-    if (i > maxIndex()) i = 0;            // al llegar al final vuelve al inicio
-    if (i < 0) i = maxIndex();            // y viceversa
+    if (i > maxIndex()) i = 0;            
+    if (i < 0) i = maxIndex();            
     index = i;
     track.style.transform = 'translateX(' + (-index * step()) + 'px)';
   }
@@ -168,7 +166,7 @@ function initHighlightsCarousel() {
 }
 
 /* ==========================================================================
-   Ventanitas
+   Ventanas
    ========================================================================== */
 function makeClickable(node, handler, label) {
   node.setAttribute('role', 'button');

@@ -1,11 +1,11 @@
 /* ==========================================================================
-   modal.js — Ventanitas (modales) y avisos (toast). Se usa en Inicio y Blog.
+   Ventanas (modales) y avisos (toast) Usado en Inicio y Blog.
 
    Uso:
-     Modal.open({ node: unNodo, className: 'modal--accent', label: 'Título' });
-     Modal.close();
-     Toast.show('Mensaje');
-   ========================================================================== */
+    Modal.open({ node: unNodo, className: 'modal--accent', label: 'Título' });
+    Modal.close();
+    Toast.show('Mensaje');
+    */
 'use strict';
 
 (function () {
@@ -87,7 +87,7 @@
     document.body.style.paddingRight = scrollbar > 0 ? scrollbar + 'px' : '';
     document.body.classList.add('modal-open');
 
-    // Forzar reflow para que la transición de entrada se ejecute
+    // Forzar reflow para que la transicion de entrada se ejecute
     void overlay.offsetWidth;
     overlay.classList.add('is-open');
     closeBtn.focus({ preventScroll: true });

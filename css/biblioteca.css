@@ -1,5 +1,5 @@
 /* ==========================================================================
-   biblioteca.css — Estilos específicos de la página BIBLIOTECA (biblioteca.html)
+   biblioteca.css — Estilos específicos de la página BIBLIOTECA 
    ========================================================================== */
 
 /* Reset propio de la Biblioteca (:where mantiene especificidad 0 y no pisa nada) */
@@ -20,8 +20,7 @@ button:where(.page-biblioteca *) {
   border: none;
 }
 
-/* Tipografía: títulos en Lora (igual que el Blog) y Playfair Display disponible
-   para cambiarlo con una sola línea:  --font-heading: 'Playfair Display', serif;  */
+/* Tipografía: títulos en Lora (igual que el Blog) */
 .page-biblioteca {
   --font-heading: 'Lora', serif;
 }

@@ -1,6 +1,15 @@
-# Sitio web — Iglesia San Mateo
 
-Orden de navegación: **Inicio → Blog → Biblioteca**
+# Portal Web - Iglesia San Mateo ⛪
+
+Pagina Web realizada para el Santuario de Nuestra Senora de Belen. Realizada con el proposito de digitalizar mejro los sucesos historicos de la parroquia y darle accesibildad a aquellos que quieran saber mas de esta comunidad.
+
+**VISITA LA WEB EN:** <www.santaurio-nuetra-senora-de-belen.com>
+
+![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+
+## Orden de navegación: **Inicio → Blog → Biblioteca**
+
+Estructura de los archivos encontrados en este repositorio:
 
 ```
 website-iglesia-sanmateo/
@@ -24,13 +33,30 @@ website-iglesia-sanmateo/
 X
 ```
 
-Los scripts son esqueletos con `TODO` listos para programar; ya están enlazados con `defer` en cada HTML.
+## Como usarla: Panel de Administrador
 
-## Dónde editar el contenido de las ventanitas
-- **Eventos / grupos (Inicio):** atributo `data-desc="..."` de cada `.event-card` y `.group-card`.
-- **Publicaciones (Blog):** atributo `data-body="..."` de cada `.blog-card`.
-- **¿Quiénes somos?:** `<template id="modal-about">` al final de `index.html`.
-- **Imágenes del slider del hero:** arreglo `HERO_SLIDES` al inicio de `scripts.js/home.js`.
+Esta pagina web cuenta con dos (2) secciones fundamentales; El blog donde se puede publicar eventos/noticias/informacion en tiempo real por parte de la iglesia; La biblioteca virtual se encuentran todos aquellos archivos/imagenes/videos/pasajes biblicos/etc oficiales sobre La virgen de belen y San mateo (o la parroquia en si).
 
-## ACTUALIZACION 12/10/26
-  las secciones de home y blog funcionan ahora con animaciones pero los tags de los blogs no, tampoco tiene informacion relevante. la biblioteca no funciona en ningun aspecto, tampoco tiene animaciones ni ventanas nuevas. 
+estas secciones unicamente son editables por parte del adminitrados de la pagina, por ende se le creo un portal dedicado unicamnete a la vista del mismo para asi ser mas sencillas las actualizaciones del portal web.
+
+## Screenshots
+
+![App Screenshot](https://dummyimage.com/468x300?text=App+Screenshot+Here)
+
+## Documentation
+
+Aca encontraras los codumentos realizados para este proyecto asignado para "servicio comunitario".
+
+- [Informe general](https://linktodocumentation)
+- [Documentacion del Frontend](https://linktodocumentation)
+
+## Tech usada
+
+**Frontend:** Figma, HTML5, CSS3, JavaScript
+
+**Backend:** XAMPP, Node.js
+
+## Authors
+
+- [@meljazx](https://www.github.com/meljazx) <---Full-stack--->
+- [@inerciadev](https://www.github.com/inerciadev) <---Backend--->

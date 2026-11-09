@@ -1,9 +1,6 @@
 /* ==========================================================================
    animations.js — Aparecer al hacer scroll (Inicio y Blog)
 
-   Uso:
-     Reveal.add('.info-card', { stagger: 0.15 });
-     Reveal.add('.virgin-text-left', { variant: 'left' });   // left | right | zoom
    ========================================================================== */
 'use strict';
 
@@ -22,7 +19,7 @@
       target.classList.add('is-visible');
       observer.unobserve(target);
 
-      // Al terminar, quitamos las clases para que el hover use sus propias transiciones
+      // auita las clases para que el hover use sus propias transiciones al terminar
       const delay = parseFloat(target.style.getPropertyValue('--reveal-delay')) || 0;
       setTimeout(() => {
         target.classList.remove('reveal', 'reveal--left', 'reveal--right', 'reveal--zoom', 'is-visible');

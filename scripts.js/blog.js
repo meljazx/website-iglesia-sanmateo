@@ -1,5 +1,5 @@
 /* ==========================================================================
-   blog.js — Lógica del BLOG (solo se carga en blog.html)
+   Lógica del BLOG 
    ========================================================================== */
 'use strict';
 
@@ -22,8 +22,7 @@ function initSearch(input, posts) {
 
   input.addEventListener('input', () => {
     const query = input.value.trim().toLowerCase();
-    // TODO: recorrer `posts` y ocultar los que no contengan `query`
-    //       en .card-title o .card-excerpt (ej. post.hidden = true/false)
+   
   });
 }
 
@@ -36,7 +35,7 @@ function initFilters(filterBtn, tags, posts) {
 
 
 /* ==========================================================================
-   Ventanitas de publicación + botón compartir
+   Ventananas de publicacion + boton compartir
    ========================================================================== */
 function postUrl(id) {
   return location.origin + location.pathname + '#' + id;
@@ -134,7 +133,7 @@ function initPostModals(posts) {
     }
   });
 
-  // Enlace directo: blog.html#post-2 abre esa publicación
+  // Enlace directo
   const target = location.hash && document.getElementById(location.hash.slice(1));
   if (target && target.classList.contains('blog-card')) setTimeout(() => openPostModal(target), 400);
 }

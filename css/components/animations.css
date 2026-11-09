@@ -1,10 +1,8 @@
 /* ==========================================================================
    animations.css — Animaciones de Inicio y Blog
-   Todo está limitado a .page-home / .page-blog (o a html.js-anim, que solo
-   se activa en esas dos páginas), así que Biblioteca no cambia.
    ========================================================================== */
 
-/* ---------- Aparecer al hacer scroll ---------- */
+/* Aparecer al hacer scroll */
 html.js-anim { scroll-behavior: smooth; }
 
 html.js-anim .reveal {
