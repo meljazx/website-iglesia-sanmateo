@@ -47,6 +47,7 @@ estas secciones unicamente son editables por parte del adminitrados de la pagina
 
 Aca encontraras los codumentos realizados para este proyecto asignado para "servicio comunitario".
 
+- [Diseno para usarlo gratuitamente en Figma](https://www.figma.com/community/file/1703898983736739351)
 - [Informe general](https://linktodocumentation)
 - [Documentacion del Frontend](https://linktodocumentation)
 
